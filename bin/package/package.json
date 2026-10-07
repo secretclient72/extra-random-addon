@@ -1,0 +1,47 @@
+{
+  "name": "extra-random-addon",
+  "version": "1.1.1",
+  "description": "Some extra 'random' features to make coders' lives easier.",
+  "main": "./index.js",
+  "directories": {
+    "bin": "bin"
+  },
+  "bin": {
+    "update-log": "bin/updatelog.js",
+    "preview": "bin/preview.js",
+    "credits": "bin/credits.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "bin/**/*"
+  ],
+  "scripts": {
+    "dev": "vite"
+  },
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "keywords": [
+    "extra",
+    "random",
+    "randint",
+    "rng",
+    "addon",
+    "convenience"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "extra-random-addon": "^1.0.9"
+  }
+}
