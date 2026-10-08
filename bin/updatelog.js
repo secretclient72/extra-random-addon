@@ -15,7 +15,8 @@ const update_log =
 1.1.0: Added a new function called randfloat(), changed the version-log command to: npx update-log. Also changed the README a bit.
 1.1.1: Forgot to save the README, so i saved and then republished.
 1.1.2: Added a <dp> parameter to randfloat(), added "-random" at the end of all the commands.
-1.1.3: Made minimum and maximum the lowest and highest numbers possible in js, added an array named "letters", revamped the README.`
+1.1.3: Made minimum and maximum the lowest and highest numbers possible in js, added an array named "letters", revamped the README.
+1.1.4: Fixed README, fixed the "letters" array, connected to Github.`
 const list = update_log.split("\n")
 if (value == "1.0.0"){
   console.log(list[0])
@@ -58,6 +59,9 @@ else if (value == "1.1.2"){
 }
 else if (value == "1.1.3"){
   console.log(list[13])
+}
+else if (value == "1.1.4"){
+  console.log(list[14])
 }
 else if (value == "help"){
   console.log("'npm run update-log-random <version-number>' for specified versions or 'npm run update-log-random' for the entire thing.")

@@ -21,9 +21,9 @@ export function randfloat(min,max,dp){
         console.error("Error: one or both of the parameters are not numbers.")
     }
 }
-export let minimum = Number.MIN_SAFE_INTEGER-1
-export let maximum = Number.MAX_SAFE_INTEGER+1
-export const letters = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+export const minimum = Number.MIN_SAFE_INTEGER-1
+export const maximum = Number.MAX_SAFE_INTEGER+1
+export const letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 export function randrandint(){
     let min = randint(minimum,maximum)
     let max = randint(minimum,maximum)

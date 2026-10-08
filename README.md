@@ -10,12 +10,6 @@ Install the package using npm:
 npm install extra-random-addon
 ```
 
-Also install Vite if you're using it alongside HTML (not needed if already installed before):
-
-```bash
-npm install --save-dev vite
-```
-
 ## Usage
 
 #### Import the functions you need:
