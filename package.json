@@ -1,6 +1,6 @@
 {
   "name": "extra-random-addon",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Some extra 'random' features to make coders' lives easier.",
   "main": "./index.js",
   "directories": {
