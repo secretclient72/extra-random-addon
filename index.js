@@ -50,3 +50,21 @@ export function rand_colour_hex(){
 export function rand_boolean(){
     return choice([true,false])
 }
+export function shuffle(array){
+    try {
+        let cloned = []
+        while (array.length !== 0){
+            let index = randint(0,array.length-1)
+            cloned.push(array[index])
+            array.splice(index,1)
+        }
+        array = cloned
+        return
+    } 
+    catch (err) {
+        if (err.message === "Assignment to constant variable."){
+            console.log(`Use "let" instead of "const" to declare the array.`)
+        }
+        else {console.log(err)}
+    }
+}

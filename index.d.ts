@@ -16,6 +16,8 @@ export declare function rand_colour_hex(): string;
 
 export declare function choice<T>(array: T[]): T;
 
-export declare function rand_boolean(): boolean
+export declare function rand_boolean(): boolean;
+
+export declare function shuffle<T>(array: T[]): void;
 
 declare module 'extra-random-addon'

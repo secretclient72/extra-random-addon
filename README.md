@@ -6,7 +6,7 @@ A simple package with simple "random" functions.
 
 Install the package using npm:
 
-```bash
+```
 npm install extra-random-addon
 ```
 
@@ -18,7 +18,7 @@ npm install extra-random-addon
 import * from "extra-random-addon"
 ```
 
-#### For HTML usage (assuming that you've already created ```index.html```):
+#### For HTML usage (how i would do it and assuming that you've already created ```index.html```):
 
 1. First, run:
 
@@ -147,21 +147,30 @@ import * from "extra-random-addon"
   rand_boolean() // true
   ```
 
+- #### shuffle(array)
+  
+  Shuffles the inputted array without returning anything.
+
+  ```js
+  let array = [1,2,3,4,5]
+  shuffle(array) // 2,4,3,5,1 etc
+  ``` 
+
 ## Update Log
 
-```bash
+```
 npx update-log-random
 ```
 
 ## Preview
 
-```bash
+```
 npx preview-random
 ```
 
 ## Credits
 
-```bash
+```
 npx credits-random
 ```
 

@@ -16,7 +16,8 @@ const update_log =
 1.1.1: Forgot to save the README, so i saved and then republished.
 1.1.2: Added a <dp> parameter to randfloat(), added "-random" at the end of all the commands.
 1.1.3: Made minimum and maximum the lowest and highest numbers possible in js, added an array named "letters", revamped the README.
-1.1.4: Fixed README, fixed the "letters" array, connected to Github.`
+1.1.4: Fixed README, fixed the "letters" array, connected to Github.
+1.1.5: Added a new function called shuffle(), added equality between Windows and Linux in the README.`
 const list = update_log.split("\n")
 if (value == "1.0.0"){
   console.log(list[0])
@@ -62,6 +63,9 @@ else if (value == "1.1.3"){
 }
 else if (value == "1.1.4"){
   console.log(list[14])
+}
+else if (value == "1.1.5"){
+  console.log(list[15])
 }
 else if (value == "help"){
   console.log("'npm run update-log-random <version-number>' for specified versions or 'npm run update-log-random' for the entire thing.")

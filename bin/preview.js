@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { randint, randfloat, randrandint, rand_colour_rgb, rand_colour_hex, minimum, maximum, letters, choice, rand_boolean } from "extra-random-addon"
+import { randint, randfloat, randrandint, rand_colour_rgb, rand_colour_hex, minimum, maximum, letters, choice, rand_boolean, shuffle } from "extra-random-addon"
 const args = process.argv.slice(2)
 if (args[0] === "randint"){
     const min = parseInt(args[1])
@@ -36,6 +36,11 @@ else if (args[0] === "choice"){
 else if (args[0] === "rand_boolean"){
     console.log(rand_boolean())
 }
+else if (args[0] === "shuffle"){
+    let output = args[1]
+    shuffle(output)
+    console.log(output)
+}
 else if (args[0] === "help"){
     const help = 
     `Syntax:
@@ -48,6 +53,7 @@ else if (args[0] === "help"){
     npx preview-random rand_colour_rgb
     npx preview-random rand_colour_hex
     npx preview-random choice <array>
-    npx preview-random rand_boolean`
+    npx preview-random rand_boolean
+    npx preview-random shuffle <array>`
     console.log(help)
 }
